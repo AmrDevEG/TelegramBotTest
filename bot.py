@@ -5,7 +5,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, filters, C
 
 # --- توكن البوت الخاص بك ---
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-if not BOT_TOKEN:
+if not TOKEN:
     raise ValueError("خطأ: لم يتم العثور على متغير البيئة TELEGRAM_TOKEN. يرجى إضافته.")
 # -----------------------------
 
