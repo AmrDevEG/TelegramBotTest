@@ -4,9 +4,8 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- توكن البوت الخاص بك ---
-TOKEN = os.getenv("TELEGRAM_TOKEN")
+BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not BOT_TOKEN:
-    # هذا الكود سيوقف البوت لو لم يجد التوكن، وهذا أفضل من أن يعمل بخطأ
     raise ValueError("خطأ: لم يتم العثور على متغير البيئة TELEGRAM_TOKEN. يرجى إضافته.")
 # -----------------------------
 
