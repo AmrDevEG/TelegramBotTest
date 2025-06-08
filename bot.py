@@ -1,9 +1,13 @@
 # استيراد المكتبات اللازمة
+import os
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- توكن البوت الخاص بك ---
-TOKEN = "7781444682:AAEHhJx2A4UgLzVH8DSGNfd35pZ6v_WDJQw" 
+TOKEN = os.getenv("TELEGRAM_TOKEN")
+if not BOT_TOKEN:
+    # هذا الكود سيوقف البوت لو لم يجد التوكن، وهذا أفضل من أن يعمل بخطأ
+    raise ValueError("خطأ: لم يتم العثور على متغير البيئة TELEGRAM_TOKEN. يرجى إضافته.")
 # -----------------------------
 
 # تعريف وظيفة الأمر /start
