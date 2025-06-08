@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- توكن البوت الخاص بك ---
-TOKEN = "7781444682:AAFtB9_VzUWlbZ8vlzd2tjPcJvZB52x-Bpg" 
+TOKEN = "7781444682:AAEHhJx2A4UgLzVH8DSGNfd35pZ6v_WDJQw" 
 # -----------------------------
 
 # تعريف وظيفة الأمر /start
