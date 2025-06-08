@@ -4,7 +4,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # --- توكن البوت الخاص بك ---
-BOT_TOKEN = os.getenv("TELEGRAM_TOKEN")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 if not BOT_TOKEN:
     raise ValueError("خطأ: لم يتم العثور على متغير البيئة TELEGRAM_TOKEN. يرجى إضافته.")
 # -----------------------------
